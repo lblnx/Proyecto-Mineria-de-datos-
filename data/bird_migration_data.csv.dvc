@@ -1,0 +1,5 @@
+outs:
+- md5: 5386c9cfb5e6df0461c8fd077a605607
+  size: 2797854
+  hash: md5
+  path: bird_migration_data.csv
