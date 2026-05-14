@@ -33,3 +33,4 @@ def clean_data(df):
     return df
 
 df_dest = clean_data(df_dest)
+df_dest.to_csv("data/interim/bird_migration_OD_clean.csv", index=False)
