@@ -32,3 +32,19 @@ stages:
       hash: md5
       md5: 15ccfc098b7370d2ea68368340cdc65b
       size: 6367080
+  seleccion:
+    cmd: python src/features/seleccion.py
+    deps:
+    - path: data/processed/bird_migration_OD_scaled.csv
+      hash: md5
+      md5: 15ccfc098b7370d2ea68368340cdc65b
+      size: 6367080
+    - path: src/features/seleccion.py
+      hash: md5
+      md5: c358ff7db0f32b5f2f802b458e7ba8cb
+      size: 607
+    outs:
+    - path: data/processed/bird_migration_OD_selected.csv
+      hash: md5
+      md5: 241b69217f880113aba27a307421d830
+      size: 2099203
