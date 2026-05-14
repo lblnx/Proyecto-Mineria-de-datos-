@@ -73,10 +73,26 @@ stages:
       size: 2099203
     - path: src/models/RANDOM-FOREST.py
       hash: md5
-      md5: d117977701887f676fea071ebeb7d773
-      size: 1450
+      md5: 7b26fa38eb93f47e0f4cb4c88396e2f8
+      size: 1427
     outs:
     - path: reports/figures/rf_confusion_matrix.png
       hash: md5
       md5: 060c16b1aaab6b2682e39c9bedf4a165
       size: 55627
+  knn:
+    cmd: python src/models/KNN.py
+    deps:
+    - path: data/processed/bird_migration_OD_selected.csv
+      hash: md5
+      md5: 241b69217f880113aba27a307421d830
+      size: 2099203
+    - path: src/models/KNN.py
+      hash: md5
+      md5: 97c5e022dc979090f291db0e074a080d
+      size: 1527
+    outs:
+    - path: reports/figures/knn_confusion_matrix.png
+      hash: md5
+      md5: 84a3f403c8e6b13f9d0d0bd01501157e
+      size: 57866
