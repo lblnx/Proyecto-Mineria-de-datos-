@@ -42,3 +42,11 @@ stages:
     - src/models/KNN.py
     outs:
     - reports/figures/knn_confusion_matrix.png
+
+  regresion_logistica:
+    cmd: python src/models/REGRESION_LOGISTICA.py
+    deps:
+    - data/processed/bird_migration_OD_selected.csv
+    - src/models/REGRESION_LOGISTICA.py
+    outs:
+    - reports/figures/rl_confusion_matrix.png
