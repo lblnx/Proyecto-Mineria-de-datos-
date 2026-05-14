@@ -10,7 +10,6 @@ Sarah, Pablo y Diego
 El seguimiento de las rutas migratorias es fundamental en la ecología. Las aves funcionan como excelentes bioindicadores; los cambios en sus patrones de vuelo, destinos y tiempos de migración reflejan directamente las variaciones en el clima y la salud de los ecosistemas que atraviesan. Este proyecto utiliza datos geográficos y climáticos para construir modelos predictivos que pueden ser de utilidad para el monitoreo ambiental y la preservación de especies.
 
 ## Modelos Utilizados
-Para responder a la pregunta de investigación, el análisis se dividió en dos enfoques principales:
 
 1. **Clasificación de Especies (Aprendizaje Supervisado):**
    * Se evaluaron modelos de **Random Forest**, **K-Nearest Neighbors (KNN)** y **Regresión Logística**.
