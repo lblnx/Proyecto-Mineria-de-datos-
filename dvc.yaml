@@ -28,3 +28,10 @@ stages:
     - src/models/K-MEANS.py
     outs:
     - reports/figures/kmeans_clusters.png
+  random_forest:
+    cmd: python src/models/RANDOM-FOREST.py
+    deps:
+    - data/processed/bird_migration_OD_selected.csv
+    - src/models/RANDOM-FOREST.py
+    outs:
+    - reports/figures/rf_confusion_matrix.png
