@@ -1,0 +1,8 @@
+stages:
+  limpieza:
+    cmd: python src/data/limpieza.py
+    deps:
+    - data/raw/bird_migration_with_origin_destination.csv
+    - src/data/limpieza.py
+    outs:
+    - data/interim/bird_migration_OD_clean.csv

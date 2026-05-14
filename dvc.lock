@@ -1,0 +1,18 @@
+schema: '2.0'
+stages:
+  limpieza:
+    cmd: python src/data/limpieza.py
+    deps:
+    - path: data/raw/bird_migration_with_origin_destination.csv
+      hash: md5
+      md5: 3575e0daaf95497f54ae00145dfb9e5e
+      size: 3588232
+    - path: src/data/limpieza.py
+      hash: md5
+      md5: 32968261de5e71279a01906753d5d5db
+      size: 1271
+    outs:
+    - path: data/interim/bird_migration_OD_clean.csv
+      hash: md5
+      md5: c2413965b1144617e20171cd55275026
+      size: 6066078
