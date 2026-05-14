@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-df_dest = pd.read_csv("data/bird_migration_with_origin_destination.csv")
+df_dest = pd.read_csv("data/raw/bird_migration_with_origin_destination.csv")
 
 def clean_data(df):
     # Identificar columnas numéricas y categóricas
