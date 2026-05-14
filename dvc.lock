@@ -16,3 +16,19 @@ stages:
       hash: md5
       md5: c2413965b1144617e20171cd55275026
       size: 6066078
+  procesado:
+    cmd: python src/features/procesado.py
+    deps:
+    - path: data/interim/bird_migration_OD_clean.csv
+      hash: md5
+      md5: c2413965b1144617e20171cd55275026
+      size: 6066078
+    - path: src/features/procesado.py
+      hash: md5
+      md5: 25aa3e587caa05ea90b6fd8279835c18
+      size: 559
+    outs:
+    - path: data/processed/bird_migration_OD_scaled.csv
+      hash: md5
+      md5: 15ccfc098b7370d2ea68368340cdc65b
+      size: 6367080

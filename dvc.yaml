@@ -6,3 +6,10 @@ stages:
     - src/data/limpieza.py
     outs:
     - data/interim/bird_migration_OD_clean.csv
+  procesado:
+    cmd: python src/features/procesado.py
+    deps:
+    - data/interim/bird_migration_OD_clean.csv
+    - src/features/procesado.py
+    outs:
+    - data/processed/bird_migration_OD_scaled.csv
